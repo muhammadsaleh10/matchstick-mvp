@@ -1,0 +1,132 @@
+/* Main container for the profile */
+.profile-container {
+    background-color: #f0f0f0;  /* Light gray background */
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Header section with back and submit buttons */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button, .submit-button {
+    color: #800080;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Sections such as Personal Info, Family Details, etc. */
+.profile-section {
+    background-color: #ffffff;  /* White background for sections */
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Section headings like "Family Details" */
+.profile-section h3 {
+    width: auto;  /* Allow heading to take only the space it needs */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #333;
+    margin-bottom: 10px;
+    white-space: nowrap;  /* Prevents line break */
+}
+
+/* General profile info text (e.g., name, gender, age) */
+.profile-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-item:last-child {
+    border-bottom: none;
+}
+
+/* Flex layout for gender, age, and height in a single row */
+.profile-info-group {
+    display: flex;
+    justify-content: space-between;  /* Evenly space items horizontally */
+    gap: 20px; /* Adds space between each item */
+    padding-bottom: 16px; /* Adds some space below the group */
+}
+
+/* Family Details, Personal Interests, Additional Requirements content text */
+.profile-details p {
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #666;
+    margin: 0;
+    padding-top: 8px;
+}
+
+/* Icon styling */
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #0b0000;
+}
+
+/* Styling for errors */
+.error {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+}
+/* General profile item styling */
+.profile-item {
+    display: flex;
+    align-items: center;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #333;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0; /* Default bottom border for items */
+}
+
+/* Remove bottom border specifically for Gender and Date of Birth */
+.profile-item.gender,
+.profile-item.dob {
+    border-bottom: none;
+}
+.profile-info-group .profile-item {
+    border-bottom: none; /* Remove the bottom border specifically for age and height */
+}
