@@ -50,11 +50,17 @@ Matchstick is a user-friendly app designed for Pakistani Muslim matchmakers and 
    ```bash
    http://localhost:3000
    ```
-To run backend:
-- open up another terminal
-- commands:
-- from the matchstick folder, go to the matchstick-backend folder by doing: cd matchstick-backend
-- then run: flask run
+
+## Running the Backend
+
+1. Open a new terminal window.
+2. Navigate to the backend directory:
+   ```bash
+   cd matchstick/matchstick-backend
+3. Start the Flask server:
+   ```bash
+   flask run 
+
   
 ## **Usage**
 
@@ -75,11 +81,6 @@ To run backend:
 ## **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## **Contact**
-
-- **Developer**: Haris Adnan
-- **Email**: haris@example.com
 
 Feel free to reach out if you have any questions or suggestions!
 # matchstick-mvp
